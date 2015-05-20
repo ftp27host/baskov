@@ -1,0 +1,51 @@
+<link rel="stylesheet" type="text/css" href="styles/scenes/pano.css">
+
+<div class="scene" id="pano">
+    <script type="text/javascript">
+        // hide URL field on the iPhone/iPod touch
+        function hideUrlBar() {
+            if (((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)))) {
+                container = document.getElementById("container");
+                if (container) {
+                    var cheight;
+                    switch(window.innerHeight) {
+                        case 208:cheight=268; break; // landscape
+                        case 336:cheight=396; break; // portrait, in call status bar
+                        case 356:cheight=416; break; // portrait
+                        default:
+                            cheight=window.innerHeight;
+                    }
+                    if ((container.offsetHeight!=cheight) || (window.innerHeight!=cheight)) {
+                        container.style.height=cheight + "px";
+                        setTimeout(function() { hideUrlBar(); }, 1000);
+                    }
+                }
+            }
+
+            if (window.pageYOffset==0) {
+                window.scrollTo(0, 1);
+
+            }
+        }
+    </script>
+
+    <script type="text/javascript" src="scripts/lib/object2vr_player.js">
+    </script>
+    <script type="text/javascript" src="scripts/lib/skin.js">
+    </script>
+
+    <script type="text/javascript">
+
+        // create the object player with the container
+        obj=new object2vrPlayer("pano");
+        // add the skin object
+        skin=new object2vrSkin(obj);
+        // load the configuration
+        obj.readConfigUrl("scripts/lib/Baskov_360_post_out.xml");
+        // hide the URL bar on the iPhone
+        hideUrlBar();
+
+    </script>
+</div>
+
+<script type="text/javascript" src="scripts/scenes/pano.js"></script>

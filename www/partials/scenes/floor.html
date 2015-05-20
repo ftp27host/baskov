@@ -1,0 +1,25 @@
+<link rel="stylesheet" type="text/css" href="styles/scenes/floor.css">
+
+<div class="scene" id="floor">
+    <div class="bg">
+        <img src="img/floor.jpg" id="building"/>
+        <object id="svgFloor" type="image/svg+xml" data="img/floor_opt.svg">Your browser does not support SVG</object>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="scripts/scenes/floor.js"></script>
+<style>
+    path {
+        opacity: 0;
+    }
+
+    path:hover {
+        opacity: 1 !important;
+        cursor: pointer;
+    }
+
+    path.highlight:not(:hover) {
+        opacity: 0.3;
+    }
+</style>

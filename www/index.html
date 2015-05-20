@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Scene test</title>
+    <!--<script src="http://192.168.1.51:8080/target/target-script-min.js#anonymous"></script>-->
+    <script type="text/javascript" src="./libs/jquery/dist/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="./libs/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
+    -->
+    <!--<script type="text/javascript" src="/app/vendor/bower_components/gsap/src/minified/TweenMax.min.js"></script>-->
+    
+    <!--<script type="text/javascript" src="/app/vendor/bower_components/ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js"></script>-->
+    <!--<script type="text/javascript" src="/app/vendor/bower_components/ScrollMagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>-->
+    <!--<script type="text/javascript" src="/app/vendor/bower_components/ScrollMagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>-->
+    
+    <!--<script type="text/javascript" src="/app/vendor/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/lib/jquery.smoothscroll.min.js"></script>-->
+    
+    
+    <script type="text/javascript" src="./libs/fotorama/fotorama.js"></script>
+    <link rel="stylesheet" type="text/css" href="./libs/fotorama/fotorama.css">
+    
+    <link rel="stylesheet" type="text/css" href="./libs/components-font-awesome/css/font-awesome.min.css">
+    
+    
+    <script type="text/javascript" src="./scripts/lib/blur.js"></script>
+    <script type="text/javascript" src="scripts/navigation.js"></script>
+    <link rel="stylesheet" href="styles/scene.css"/>
+</head>
+<body>
+
+<div class="burger">
+    <div class="icon"></div>
+</div>
+
+<div class="menu">
+    <div class="buttons">
+    <a class="button active" href="#main">
+        <img src="img/main/001_home.svg"/>
+        Главная
+    </a>
+    
+    <a class="button" href="#history">
+        <img src="img/main/002_history.svg"/>
+        О проекте
+    </a>
+    
+    <a class="button" href="#gallery">
+        <img src="img/main/003_gallery.svg"/>
+        Галерея
+    </a>
+    
+    <a class="button" href="#video">
+        <img src="img/main/004_video.svg"/>
+        Видео
+    </a>
+    
+    <a class="button" href="#map">
+        <img src="img/main/005_map.svg"/>
+        Виртуальный тур
+    </a>
+    
+    <a class="button" href="#pano">
+        <img src="img/main/006_360.svg"/>
+        360<sup>o</sup>
+    </a>
+    
+    <a class="button" href="#floor">
+        <img src="img/main/007_select.svg"/>
+        Планировки
+    </a>
+    
+    <a class="button" href="#contacts">
+        <img src="img/main/008_contacts.svg"/>
+        Контакты
+    </a>
+    </div>
+</div>
+
+<div class="container" style="left:0%;">
+    <div class="scenes">
+        <div class="current scene">
+            <link rel="stylesheet" type="text/css" href="styles/scenes/main.css">
+            
+            <div id="main" class="scene">
+            
+                <img class="logo" src="img/logo.png" style="top: 40%; opacity:0;"/>
+            
+                <div class="h-menu new">
+                    <a href="#history">
+                        <img src="img/main/002_history.svg"/>
+                    </a>
+            
+                    <a href="#gallery">
+                        <img src="img/main/003_gallery.svg"/>
+                    </a>
+            
+                    <a href="#video">
+                        <img src="img/main/004_video.svg"/>
+                    </a>
+            
+                    <a href="#map">
+                        <img src="img/main/005_map.svg"/>
+                    </a>
+            
+                    <a href="#pano">
+                        <img src="img/main/006_360.svg"/>
+                    </a>
+            
+                    <a href="#floor">
+                        <img src="img/main/007_select.svg"/>
+                    </a>
+            
+                    <a href="#contacts">
+                        <img src="img/main/008_contacts.svg"/>
+                    </a>
+                </div>
+            
+            </div>
+            <script type="text/javascript" src="scripts/scenes/main.js"></script>
+
+            <div class="loader"></div>
+        </div>
+        <div class="next scene">
+
+        </div>
+
+    </div>
+<div class="swipe top"></div>
+<div class="swipe bottom"></div>
+</div>
+
+
+<div class="cache" style="position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden;">
+    <img src="img/gallery/baskov_cam_001.jpg"/>
+    <img src="img/gallery/baskov_cam_002.jpg"/>
+    <img src="img/gallery/baskov_cam_003.jpg"/>
+    <img src="img/gallery/baskov_cam_004.jpg"/>
+    <img src="img/gallery/baskov_cam_005.jpg"/>
+    <img src="img/gallery/baskov_cam_006.jpg"/>
+    <img src="img/gallery/baskov_cam_007.jpg"/>
+    <img src="img/gallery/baskov_cam_008.jpg"/>
+    <img src="img/gallery/baskov_cam_009.jpg"/>
+    <img src="img/gallery/baskov_cam_010.jpg"/>
+    <img src="img/gallery/baskov_cam_011.jpg"/>
+    <img src="img/gallery/baskov_cam_012.jpg"/>
+    <img src="img/gallery/baskov_cam_013.jpg"/>
+    <img src="img/gallery/baskov_cam_014.jpg"/>
+    <img src="img/gallery/baskov_cam_015.jpg"/>
+    <img src="img/gallery/baskov_cam_016.jpg"/>
+</div>
+
+</body>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+</html>
